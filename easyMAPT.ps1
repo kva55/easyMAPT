@@ -72,13 +72,14 @@ Write-Host "[*] Remounting"
 adb remount
 Start-Sleep -Seconds 5
 
+# Adds system level CA
 Write-Host "[*] Pushing " $cacert " to /system/etc/security/cacerts/"  
 adb push $cacert /system/etc/security/cacerts/
 Start-Sleep -Seconds 5
 
-Write-Host "[*] Setting Proxy " $Burp
-adb shell settings put global http_proxy $Burp
-Start-Sleep -Seconds 5
+#Write-Host "[*] Setting Proxy " $Burp
+#adb shell settings put global http_proxy $Burp
+#Start-Sleep -Seconds 5
 
 Write-Host "[*] Remounting"
 adb remount
