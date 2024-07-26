@@ -47,6 +47,7 @@ Portable openssl can be used, but for this example linux subsystem (wsl) was use
 # Running the PowerShell Script:
 
 ## Change these variables:
+
 $cacert        = "C:\Users\username\Desktop\Burp-Cert\9aabbcce.0" # Location of your .der cert
 $avd           = "AVD_Name"            # AVD Name
 $Burp          = "10.10.10.10:8080"    # Burp Address, likely on local network or local hos
