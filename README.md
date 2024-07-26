@@ -44,6 +44,14 @@ Portable openssl can be used, but for this example linux subsystem (wsl) was use
 
 ```adb shell``` <- your device should be rooted, and sending communications to Burp Suite
 
+# Setting up AVD:
+
+As shown in the screenshots below, make sure not to use a live image otherwise rooting the device will not work. 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f0b72698-4d0b-47be-8a0c-2f0c4df16e4d" style="width: 80%;">
+  <img src="https://github.com/user-attachments/assets/1ad9ed42-1a1a-4ceb-9716-13de75c674ea" style="width: 80%;">
+</div>
+
 # Running the PowerShell Script:
 
 ## Change these variables:
@@ -63,3 +71,5 @@ $qProcess      = "qemu-system-x86_64"  # Qemu process that starts, change if sys
   <img src="https://github.com/user-attachments/assets/384a557e-67a5-4031-915c-38f984290a04" style="width: 80%;">
   <img src="https://github.com/user-attachments/assets/27d40f8c-5206-453d-8a56-5bf626b1f736" style="width: 80%;">
 </div>
+
+
