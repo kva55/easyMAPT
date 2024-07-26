@@ -76,4 +76,8 @@ $qProcess      = "qemu-system-x86_64"  # Qemu process that starts, change if sys
   <img src="https://github.com/user-attachments/assets/27d40f8c-5206-453d-8a56-5bf626b1f736" style="width: 90%;">
 </div>
 
+Configure Proxy
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/72636022-d4fb-4ddb-819e-491b44acbdab" style="width: 90%;">
+</div>
 
