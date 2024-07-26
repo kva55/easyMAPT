@@ -45,6 +45,14 @@ Portable openssl can be used, but for this example linux subsystem (wsl) was use
 ```adb shell``` <- your device should be rooted, and sending communications to Burp Suite
 
 # Running the PowerShell Script:
+
+## Change these variables:
+$cacert        = "C:\Users\username\Desktop\Burp-Cert\9aabbcce.0" # Location of your .der cert
+$avd           = "AVD_Name"            # AVD Name
+$Burp          = "10.10.10.10:8080"    # Burp Address, likely on local network or local hos
+$checkInterval = 5                     # How many seconds to recheck device
+$qProcess      = "qemu-system-x86_64"  # Qemu process that starts, change if system non 64-bit
+
 1. Open PS as administrator
 2. ``Set-Execution Policy Bypass``
 3. ``.\easyMAPT.ps1``
