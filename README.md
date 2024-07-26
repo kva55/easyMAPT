@@ -2,6 +2,12 @@
 Powershell script that sets up a virtual android device for mobile penetration testing. 
 Requires Android Studio and Burp Suite Proxy.
 
+## Important Information
+- If you're getting the error "adbd cannot run as root in production builds", this is because this tool only works on non-live ISO images (Default Android System Image).
+- Have these environment variables in the users path:
+  - platform-tools
+  - Android/Sdk/emulator
+
 # Burp Certificate
 For this script, it is assumed that the burp suite certficate name is the subject hash.
 Portable openssl can be used, but for this example linux subsystem (wsl) was used. Wsl is not used within the script itself
