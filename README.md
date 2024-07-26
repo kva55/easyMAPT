@@ -5,8 +5,8 @@ Requires Android Studio and Burp Suite Proxy.
 ## Important Information
 - If you're getting the error "adbd cannot run as root in production builds", this is because this tool only works on non-live ISO images (Default Android System Image).
 - Have these environment variables in the users path or hardcode them:
-  - platform-tools
-  - Android/Sdk/emulator
+  - platform-tools - https://developer.android.com/tools/releases/platform-tools
+  - Android/Sdk/emulator - https://developer.android.com/studio
  
 ## Troubleshooting
 - Load multiple AVDs with varying API versions, applications can sometimes react differently
