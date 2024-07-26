@@ -1,5 +1,6 @@
 # easyMAPT
-Powershell script that sets up a virtual android device for mobile penetration testing. Requires Android Studio.
+Powershell script that sets up a virtual android device for mobile penetration testing. 
+Requires Android Studio and Burp Suite Proxy.
 
 # Burp Certificate
 For this script, it is assumed that the burp suite certficate name is the subject hash.
