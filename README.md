@@ -17,9 +17,15 @@ Portable openssl can be used, but for this example linux subsystem (wsl) was use
 
 # Tasks performed
 ```emulator.exe -list-avds```
+
 ```emulator.exe -avd <avd-name> -writable-system```
+
 ```reboot system```
+
 ```adb root```
+
 ```adb remount```
+
 ```adb push "your\path\to\9aabbcce.0" /system/etc/security/cacerts/```
+
 ```adb shell settings put global http_proxy 10.10.10.10:8080``` <- your proxy ip:port
