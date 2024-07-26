@@ -26,7 +26,11 @@ Portable openssl can be used, but for this example linux subsystem (wsl) was use
 
 ```emulator.exe -avd <avd-name> -writable-system```
 
-```reboot system```
+```adb root```
+
+```adb shell avbctl disable-verification```
+
+```adb reboot```
 
 ```adb root```
 
@@ -35,3 +39,12 @@ Portable openssl can be used, but for this example linux subsystem (wsl) was use
 ```adb push "your\path\to\9aabbcce.0" /system/etc/security/cacerts/```
 
 ```adb shell settings put global http_proxy 10.10.10.10:8080``` <- your proxy ip:port
+
+```adb remount```
+
+```adb shell``` <- your device should be rooted, and sending communications to Burp Suite
+
+# Running the PowerShell Script:
+1. Open PS as administrator
+2. ``Set-Execution Policy Bypass``
+3. ``.\easyMAPT.ps1``
